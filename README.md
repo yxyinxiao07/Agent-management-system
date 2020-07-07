@@ -18,10 +18,6 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-## [项目预览地址](https://sevenchrishai.github.io/vue-agent-ylh/dist/#/login)
-
 ## 踩坑记录
 
 1. build之后css设置的背景图片不显示问题
@@ -61,5 +57,3 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ```
   background: url(../assets/img/login_pic.png) no-repeat;
 ```
-
-## 项目有些内容（如MOCK的api等）copy了其他大神的代码[vue2-admin-grace](https://github.com/alex-0407/vue2-admin-grace)，内容更丰富，可移步学习。
