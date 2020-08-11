@@ -1,6 +1,6 @@
-# vue-agent-ylh
+# management
 
-> A Vue.js project
+> 一个Vue的管理系统
 
 ## Build Setup
 
@@ -18,42 +18,35 @@ npm run build
 npm run build --report
 ```
 
-## 踩坑记录
 
-1. build之后css设置的背景图片不显示问题
-+ 在build/webpack.prod.conf.js文件里output里面添加：publicPath：'./'
-```
-  output: {
-    publicPath:'./',
-    path: config.build.assetsRoot,
-    filename: utils.assetsPath('js/[name].[chunkhash].js'),
-    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
-  },
-```
-+ 在build/utils.js文件里添加 publicPath:'../../'
-```
-    if (options.extract) {
-      return ExtractTextPlugin.extract({
-        use: loaders,
-        fallback: 'vue-style-loader',
-        publicPath:'../../'
-      })
-    } else {
-      return ['vue-style-loader'].concat(loaders)
-    }
-```
-+ 在config/index.js文件里，添加assetsPublicPath:'./'
-```
-  build: {
-    // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
-    // Paths
-    assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
-    assetsPublicPath: './',
-  } 
-```
-+ 设置完成，可正常使用背景图片样式了
-```
-  background: url(../assets/img/login_pic.png) no-repeat;
-```
+## 运行截图
+
+登录界面</br>
+![image](https://github.com/yxyinxiao07/image/blob/master/agent/2.jpg)</br>
+
+首页</br>
+![image](https://github.com/yxyinxiao07/image/blob/master/agent/6.png)</br>
+
+用户管理</br>
+![image](https://github.com/yxyinxiao07/image/blob/master/agent/7.png)</br>
+
+商家管理</br>
+![image](https://github.com/yxyinxiao07/image/blob/master/agent/1.png)</br>
+
+交易管理</br>
+![image](https://github.com/yxyinxiao07/image/blob/master/agent/4.png)</br>
+
+交易管理查询条件</br>
+![image](https://github.com/yxyinxiao07/image/blob/master/agent/10.png)</br>
+
+报表管理</br>
+![image](https://github.com/yxyinxiao07/image/blob/master/agent/3.png)</br>
+
+结算管理</br>
+![image](https://github.com/yxyinxiao07/image/blob/master/agent/8.png)</br>
+
+新增</br>
+![image](https://github.com/yxyinxiao07/image/blob/master/agent/9.png)</br>
+
+编辑</br>
+![image](https://github.com/yxyinxiao07/image/blob/master/agent/5.png)</br>
